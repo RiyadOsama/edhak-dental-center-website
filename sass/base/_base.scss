@@ -1,5 +1,9 @@
 @use "../helpers/variables" as *;
 
+* {
+  font-family: "Mulish", sans-serif;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -10,6 +14,6 @@ section {
 }
 
 body {
-  background-color: $white;
+  background-color: $darkWhite;
   color: $darkGray;
 }
