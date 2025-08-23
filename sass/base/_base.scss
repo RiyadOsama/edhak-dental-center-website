@@ -2,11 +2,21 @@
 
 * {
   font-family: "Mulish", sans-serif;
+  font-size: 1.05rem;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  &:hover {
+    color: $mainColor !important;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 section {
@@ -14,6 +24,6 @@ section {
 }
 
 body {
-  background-color: $darkWhite;
+  background-color: $pastelPink;
   color: $darkGray;
 }

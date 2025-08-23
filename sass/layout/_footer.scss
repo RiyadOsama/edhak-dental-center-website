@@ -1,0 +1,60 @@
+@use "../helpers/variables" as *;
+@use "../helpers/mixins" as *;
+
+footer .container {
+  &:first-child {
+    margin: 30px auto;
+    @include breakpoint(extra-small) {
+      & {
+        margin: 0px auto;
+      }
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 20px;
+    .col-11 {
+      @include breakpoint(extra-small) {
+        small {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+footer hr {
+  margin-top: 0;
+}
+
+footer a {
+  line-height: 2.5rem;
+  &:hover {
+    color: $mainColor;
+  }
+}
+
+footer ul li {
+  position: relative;
+  margin-left: 15px;
+  &::before {
+    position: absolute;
+    content: "";
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-left-color: $mainColor;
+  }
+}
+
+footer #backToTop {
+  cursor: pointer;
+  font-size: smaller;
+  &:hover {
+    color: $mainColor;
+  }
+  @include breakpoint(extra-small) {
+    display: none;
+  }
+}
