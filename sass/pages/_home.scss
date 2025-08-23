@@ -1,1 +1,12 @@
 @use "../helpers/variables" as *;
+
+#forHome {
+  color: $darkWhite;
+  height: 100vh;
+  background-image: url(../../imgs/home/pedo.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}

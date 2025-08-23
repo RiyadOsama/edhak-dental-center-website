@@ -19,11 +19,36 @@ ul {
   margin: 0;
 }
 
+body {
+  background-color: $pastelPink;
+  color: $darkGray;
+}
+
 section {
   margin: 70px 0;
 }
 
-body {
-  background-color: $pastelPink;
-  color: $darkGray;
+h1 {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+header:not(#forHome) {
+  color: $darkWhite;
+  height: 50vh;
+  background-image: url(../../imgs/home/Prophylaxis.webp);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($color: #000000, $alpha: 0.2);
 }
