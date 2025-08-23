@@ -10,3 +10,58 @@
   background-size: cover;
   position: relative;
 }
+
+.owl-theme .owl-nav {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  button.owl-prev,
+  button.owl-next {
+    background: #ddd !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    &:hover {
+      background-color: $mainColor !important;
+    }
+    span {
+      font-size: 30px;
+    }
+  }
+}
+
+.owl-theme .owl-dots {
+  display: none;
+}
+
+.quote {
+  padding: 20px 60px;
+  margin: 50px 0;
+  height: 480px;
+  background-color: $darkWhite;
+  .quote-icon {
+    background-color: $pastelPink;
+    color: $mainColor;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .quote-content {
+    margin: 25px 0;
+    height: 265px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+  }
+  .client {
+    .client-name {
+      font-weight: bold;
+    }
+    .client-location {
+    }
+  }
+}

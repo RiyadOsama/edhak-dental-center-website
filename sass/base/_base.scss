@@ -33,6 +33,11 @@ h1 {
   margin-bottom: 20px;
 }
 
+h2 {
+  color: $sectionHeader;
+  font-weight: 900;
+}
+
 header:not(#forHome) {
   color: $darkWhite;
   height: 50vh;
