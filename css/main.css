@@ -264,6 +264,7 @@ footer #backToTop:hover {
 
 #stadio h2 {
   margin: 50px 0;
+  text-align: center;
 }
 #stadio img {
   object-fit: cover;
@@ -271,6 +272,41 @@ footer #backToTop:hover {
   border-radius: 10px;
 }
 
+#whyChooseUs .container {
+  background-color: #1b898b;
+  padding: 5px 80px 80px 80px;
+  color: #eee;
+}
+#whyChooseUs h2 {
+  margin: 50px 0;
+  text-align: center;
+}
+#whyChooseUs .items .item {
+  display: flex;
+  border-bottom: 2px solid #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#whyChooseUs .items .item .item-icon {
+  width: 60px;
+  margin-right: 20px;
+}
+#whyChooseUs .items .item .item-icon img {
+  width: 100%;
+  height: auto;
+}
+#whyChooseUs .items .item .item-info h4 {
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  #whyChooseUs .container {
+    padding: 5px 5px 80px 5px;
+  }
+  #whyChooseUs .item-icon {
+    display: none;
+  }
+}
 .light-theme {
   background: #ffffff;
   color: #333;

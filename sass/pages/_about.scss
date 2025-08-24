@@ -1,10 +1,56 @@
+@use "../helpers/mixins" as *;
+@use "../helpers/variables" as *;
+
 #stadio {
   h2 {
     margin: 50px 0;
+    text-align: center;
   }
   img {
     object-fit: cover;
     max-height: 600px;
     border-radius: 10px;
+  }
+}
+
+#whyChooseUs {
+  .container {
+    background-color: $secondaryColor;
+    padding: 5px 80px 80px 80px;
+    color: $darkWhite;
+  }
+  h2 {
+    margin: 50px 0;
+    text-align: center;
+  }
+  .items {
+    .item {
+      display: flex;
+      border-bottom: 2px solid $darkWhite;
+      padding: 10px;
+      margin-bottom: 20px;
+      .item-icon {
+        width: 60px;
+        margin-right: 20px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .item-info {
+        h4 {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #whyChooseUs .container {
+    padding: 5px 5px 80px 5px;
+  }
+  #whyChooseUs .item-icon {
+    display: none;
   }
 }
