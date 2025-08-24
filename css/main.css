@@ -124,7 +124,7 @@ footer #backToTop:hover {
 
 .owl-theme .owl-nav {
   position: absolute;
-  top: -70px;
+  top: -30px;
   right: 0;
 }
 .owl-theme .owl-nav button.owl-prev,
@@ -147,13 +147,21 @@ footer #backToTop:hover {
   display: none;
 }
 
-.quote {
-  padding: 20px 60px;
+#patients .owl-item {
+  padding: 0 10px;
+}
+#patients .owl-item .quote {
+  padding: 5px 30px;
   margin: 50px 0;
   height: 480px;
   background-color: #eee;
+  border-radius: 12px;
+  transition: all 0.1s;
 }
-.quote .quote-icon {
+#patients .owl-item .quote:hover {
+  box-shadow: 3px 3px 9px 0px black;
+}
+#patients .owl-item .quote .quote-icon {
   background-color: #fadadd;
   color: #04dafe;
   border-radius: 50%;
@@ -164,16 +172,44 @@ footer #backToTop:hover {
   align-items: center;
   margin-top: 20px;
 }
-.quote .quote-content {
+#patients .owl-item .quote .quote-content {
   margin: 25px 0;
   height: 265px;
   overflow: hidden;
   text-overflow: ellipsis;
   position: relative;
 }
-.quote .client .client-name {
+#patients .owl-item .quote .client .client-name {
   font-weight: bold;
 }
+
+#doctors .owl-item {
+  padding: 0 10px;
+}
+#doctors .owl-item .doctor {
+  padding: 50px 30px;
+  margin: 50px 0;
+  min-height: 500px;
+  background-color: #eee;
+  border-radius: 12px;
+  transition: all 0.1s;
+}
+#doctors .owl-item .doctor:hover {
+  box-shadow: 3px 3px 9px 0px black;
+}
+#doctors .owl-item .doctor .doctor-image {
+  padding: 20px 60px;
+}
+#doctors .owl-item .doctor .doctor-image img {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+#doctors .owl-item .doctor .doctor-name {
+  margin: 40px 0 0 0;
+  font-weight: bold;
+}
+
 .light-theme {
   background: #ffffff;
   color: #333;

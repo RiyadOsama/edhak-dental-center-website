@@ -13,7 +13,7 @@
 
 .owl-theme .owl-nav {
   position: absolute;
-  top: -70px;
+  top: -30px;
   right: 0;
   button.owl-prev,
   button.owl-next {
@@ -34,34 +34,67 @@
   display: none;
 }
 
-.quote {
-  padding: 20px 60px;
-  margin: 50px 0;
-  height: 480px;
-  background-color: $darkWhite;
-  .quote-icon {
-    background-color: $pastelPink;
-    color: $mainColor;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  .quote-content {
-    margin: 25px 0;
-    height: 265px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    position: relative;
-  }
-  .client {
-    .client-name {
-      font-weight: bold;
+#patients .owl-item {
+  padding: 0 10px;
+  .quote {
+    padding: 5px 30px;
+    margin: 50px 0;
+    height: 480px;
+    background-color: $darkWhite;
+    border-radius: 12px;
+    transition: all 0.1s;
+    &:hover {
+      box-shadow: 3px 3px 9px 0px black;
     }
-    .client-location {
+    .quote-icon {
+      background-color: $pastelPink;
+      color: $mainColor;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .quote-content {
+      margin: 25px 0;
+      height: 265px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: relative;
+    }
+    .client {
+      .client-name {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+#doctors .owl-item {
+  padding: 0 10px;
+  .doctor {
+    padding: 50px 30px;
+    margin: 50px 0;
+    min-height: 500px;
+    background-color: $darkWhite;
+    border-radius: 12px;
+    transition: all 0.1s;
+    &:hover {
+      box-shadow: 3px 3px 9px 0px black;
+    }
+    .doctor-image {
+      padding: 20px 60px;
+      img {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .doctor-name {
+      margin: 40px 0 0 0;
+      font-weight: bold;
     }
   }
 }
