@@ -1,0 +1,12 @@
+@use "../helpers/variables" as *;
+
+header:not(#forHome) {
+  color: $darkWhite;
+  height: 50vh;
+  background-image: url(../../imgs/home/Prophylaxis.webp);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}

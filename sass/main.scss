@@ -1,32 +1,23 @@
-// Import Global Rules
+// Import THe Global Rules
 @use "base/base";
 
-// Import Variables
+// Import The Helpers
+@use "helpers/mixins" as *;
 @use "helpers/variables" as *;
 
-// Import Placeholders
-@use "helpers/placeholders";
+// Import The Components
+@use "components/overlay";
+@use "components/spinner";
 
-// Import Mixins
-@use "helpers/mixins" as *;
-
-// Import Header
+// Import The Layout
 @use "layout/header";
-
-// Import Footer
 @use "layout/footer";
 
-// Import Home Page
+// Import The Pages
 @use "pages/home";
-
-// Import About Page
 @use "pages/about";
-
-// Import Services Page
 @use "pages/services";
-
-// Import Contact Page
 @use "pages/contact";
 
-// Import Themes
+// Import The Themes
 @use "themes/theme";
