@@ -47,3 +47,10 @@ $(".play").on("click", function () {
 $(".stop").on("click", function () {
   owl.trigger("stop.owl.autoplay");
 });
+
+// Spinner
+let spinner = document.querySelector(".spinner");
+setTimeout(() => {
+  spinner.style.opacity = "0";
+  spinner.style.zIndex = "-1";
+}, 1000);

@@ -57,3 +57,61 @@ header:not(#forHome) {
   left: 0;
   background-color: rgba($color: #000000, $alpha: 0.2);
 }
+
+/* Start Spinner */
+.spinner {
+  position: fixed;
+  background: $pastelPink;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: all 1s;
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    animation: pulse 1s linear infinite;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      border: 5px solid #fff;
+      border-radius: 50%;
+      display: inline-block;
+      box-sizing: border-box;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      animation: scaleUp 1s linear infinite;
+    }
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  60%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes pulse {
+  0%,
+  60%,
+  100% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+}
+/* End Spinner */
