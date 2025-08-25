@@ -2,7 +2,6 @@
 
 #stadio {
   h2 {
-    margin: 50px 0;
     text-align: center;
   }
   img,
@@ -47,11 +46,14 @@
 }
 
 @media (max-width: 992px) {
-  #whyChooseUs .container {
-    padding: 5px 5px 80px 5px;
-  }
-  #whyChooseUs .item-icon {
-    display: none;
+  #whyChooseUs {
+    margin: 0;
+    .container {
+      padding: 5px 5px 80px 5px;
+    }
+    #whyChooseUs .item-icon {
+      display: none;
+    }
   }
 }
 
@@ -91,6 +93,14 @@
           transition: max-height 0.3s ease;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #faq .items .item {
+    h4 {
+      font-size: 22px;
     }
   }
 }

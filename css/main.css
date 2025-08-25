@@ -34,6 +34,7 @@ h1 {
 h2 {
   color: #c37c13;
   font-weight: 900;
+  margin-bottom: 20px;
 }
 
 .overlay {
@@ -263,7 +264,6 @@ footer #backToTop:hover {
 }
 
 #stadio h2 {
-  margin: 50px 0;
   text-align: center;
 }
 #stadio img,
@@ -301,10 +301,13 @@ footer #backToTop:hover {
 }
 
 @media (max-width: 992px) {
+  #whyChooseUs {
+    margin: 0;
+  }
   #whyChooseUs .container {
     padding: 5px 5px 80px 5px;
   }
-  #whyChooseUs .item-icon {
+  #whyChooseUs #whyChooseUs .item-icon {
     display: none;
   }
 }
@@ -344,10 +347,18 @@ footer #backToTop:hover {
   transition: max-height 0.3s ease;
 }
 
+@media (max-width: 992px) {
+  #faq .items .item h4 {
+    font-size: 22px;
+  }
+}
 .item-active {
   background-color: #c37c13 !important;
 }
 
+#mission {
+  padding: 5px;
+}
 #mission .row div {
   padding-right: 80px;
 }
@@ -364,6 +375,7 @@ footer #backToTop:hover {
 }
 
 .service .row {
+  padding: 15px;
   line-height: 1.9rem;
 }
 .service .row span {
@@ -396,18 +408,18 @@ footer #backToTop:hover {
 .appointment-form {
   max-width: 700px;
   padding: 60px;
-  background: #f5f6f8;
+  background: #eee;
   border-radius: 12px;
 }
 
 .btn-custom {
-  background-color: #2ed1d1;
-  color: #fff;
+  background-color: #1b898b;
+  color: #eee;
   font-weight: 500;
 }
 
 .btn-custom:hover {
-  background-color: #25b8b8;
+  background-color: #c37c13;
 }
 
 .light-theme {
