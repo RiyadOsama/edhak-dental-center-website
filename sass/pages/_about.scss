@@ -40,7 +40,7 @@
       }
       .item-info {
         h4 {
-          font-weight: 700;
+          font-weight: 500;
         }
       }
     }
@@ -76,10 +76,10 @@
           justify-content: space-between;
           align-items: center;
           h4 {
-            font-weight: 600;
+            font-weight: 500;
           }
           button {
-            font-size: 40px;
+            font-size: 30px;
             background-color: transparent;
             color: $darkWhite;
             border: none;

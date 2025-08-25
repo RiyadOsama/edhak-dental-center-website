@@ -42,9 +42,9 @@
     height: 480px;
     background-color: $darkWhite;
     border-radius: 12px;
-    transition: all 0.1s;
+    transition: all 0.3s;
     &:hover {
-      box-shadow: 3px 3px 9px 0px black;
+      box-shadow: 1px 1px 6px 0px black;
     }
     .quote-icon {
       background-color: $pastelPink;
@@ -80,9 +80,9 @@
     min-height: 500px;
     background-color: $darkWhite;
     border-radius: 12px;
-    transition: all 0.1s;
+    transition: all 0.3s;
     &:hover {
-      box-shadow: 3px 3px 9px 0px black;
+      box-shadow: 1px 1px 6px 0px black;
     }
     .doctor-image {
       padding: 20px 60px;

@@ -208,10 +208,10 @@ footer #backToTop:hover {
   height: 480px;
   background-color: #eee;
   border-radius: 12px;
-  transition: all 0.1s;
+  transition: all 0.3s;
 }
 #patients .owl-item .quote:hover {
-  box-shadow: 3px 3px 9px 0px black;
+  box-shadow: 1px 1px 6px 0px black;
 }
 #patients .owl-item .quote .quote-icon {
   background-color: #fadadd;
@@ -244,10 +244,10 @@ footer #backToTop:hover {
   min-height: 500px;
   background-color: #eee;
   border-radius: 12px;
-  transition: all 0.1s;
+  transition: all 0.3s;
 }
 #doctors .owl-item .doctor:hover {
-  box-shadow: 3px 3px 9px 0px black;
+  box-shadow: 1px 1px 6px 0px black;
 }
 #doctors .owl-item .doctor .doctor-image {
   padding: 20px 60px;
@@ -297,7 +297,7 @@ footer #backToTop:hover {
   height: auto;
 }
 #whyChooseUs .items .item .item-info h4 {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 @media (max-width: 992px) {
@@ -329,10 +329,10 @@ footer #backToTop:hover {
   align-items: center;
 }
 #faq .container .items .item .question h4 {
-  font-weight: 600;
+  font-weight: 500;
 }
 #faq .container .items .item .question button {
-  font-size: 40px;
+  font-size: 30px;
   background-color: transparent;
   color: #eee;
   border: none;
@@ -348,6 +348,51 @@ footer #backToTop:hover {
   background-color: #c37c13 !important;
 }
 
+#mission .row div {
+  padding-right: 80px;
+}
+#mission .row div h2 {
+  margin: 50px 0;
+}
+#mission .row div p {
+  line-height: 1.9rem;
+}
+#mission .row div img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.service .row {
+  line-height: 1.9rem;
+}
+.service .row span {
+  font-weight: 700;
+  font-size: x-large;
+  color: #1b898b;
+}
+.service .row h5 {
+  font-weight: bold;
+}
+.service .row img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  section {
+    margin: 20px 0;
+  }
+  .service .row span {
+    display: block;
+    margin-top: 20px;
+  }
+  .service .row .col-lg-8 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
 .light-theme {
   background: #ffffff;
   color: #333;
