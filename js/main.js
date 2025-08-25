@@ -54,3 +54,36 @@ setTimeout(() => {
   spinner.style.opacity = "0";
   spinner.style.zIndex = "-1";
 }, 1000);
+
+// FAQs
+const btns = document.querySelectorAll(".item button");
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const item = btn.closest(".item");
+    const answer = item.querySelector(".answer");
+    const isActive = item.classList.contains("item-active");
+
+    // Step 1: Close all items
+    document.querySelectorAll(".item").forEach((el) => {
+      const otherAnswer = el.querySelector(".answer");
+      const otherBtn = el.querySelector("button");
+
+      el.classList.remove("item-active");
+
+      if (otherAnswer) {
+        otherAnswer.style.maxHeight = null;
+      }
+      if (otherBtn) {
+        otherBtn.textContent = "+";
+      }
+    });
+
+    // Step 2: If the clicked item was not active, open it
+    if (!isActive && answer) {
+      item.classList.add("item-active");
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      btn.textContent = "–";
+    }
+  });
+});

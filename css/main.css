@@ -266,7 +266,8 @@ footer #backToTop:hover {
   margin: 50px 0;
   text-align: center;
 }
-#stadio img {
+#stadio img,
+#stadio video {
   object-fit: cover;
   max-height: 600px;
   border-radius: 10px;
@@ -307,6 +308,46 @@ footer #backToTop:hover {
     display: none;
   }
 }
+#faq .container {
+  padding: 5px 0 80px 0;
+  color: #eee;
+}
+#faq .container h2 {
+  margin: 50px 0;
+}
+#faq .container .items .item {
+  background-color: #1b898b;
+  border-bottom: 2px solid #eee;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+#faq .container .items .item .question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#faq .container .items .item .question h4 {
+  font-weight: 600;
+}
+#faq .container .items .item .question button {
+  font-size: 40px;
+  background-color: transparent;
+  color: #eee;
+  border: none;
+}
+#faq .container .items .item .answer {
+  line-height: 1.8rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.item-active {
+  background-color: #c37c13 !important;
+}
+
 .light-theme {
   background: #ffffff;
   color: #333;

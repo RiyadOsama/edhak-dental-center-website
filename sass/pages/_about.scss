@@ -6,7 +6,8 @@
     margin: 50px 0;
     text-align: center;
   }
-  img {
+  img,
+  video {
     object-fit: cover;
     max-height: 600px;
     border-radius: 10px;
@@ -53,4 +54,48 @@
   #whyChooseUs .item-icon {
     display: none;
   }
+}
+
+#faq {
+  .container {
+    padding: 5px 0 80px 0;
+    color: $darkWhite;
+    h2 {
+      margin: 50px 0;
+    }
+    .items {
+      .item {
+        background-color: $secondaryColor;
+        border-bottom: 2px solid $darkWhite;
+        padding: 40px 20px;
+        margin-bottom: 20px;
+        transition: all 0.3s;
+        .question {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h4 {
+            font-weight: 600;
+          }
+          button {
+            font-size: 40px;
+            background-color: transparent;
+            color: $darkWhite;
+            border: none;
+          }
+        }
+        .answer {
+          line-height: 1.8rem;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+.item-active {
+  background-color: $tertiaryColor !important;
 }
